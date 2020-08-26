@@ -2,16 +2,16 @@
 
 # Table of contents
 
-1. [Introduction](#1-introduction)  
-    1.1 [Culture Match Calculation](#11-culture-match-calculation)  
-        1.1.1 [Domain Representation](#111-domain-representation)  
-        1.1.2 [Statement Representation](#112-statement-representation)  
-        1.1.3 [Bin Representation](#113-bin-representation)  
-        1.1.4 [Final Score Representation](#114-final-score-representation)  
-        1.1.5 [Pseudo-code Representation](#115-pseudo-code-representation)      
-    1.2 [Skills Match Calculation](#12-skills-match-calculation)  
-        1.2.1 [Skill Representation](#121-skill-representation)  
-        1.2.2 [Pseudo-code Representation](#122-pseudo-code-representation)  
+1. [Introduction](1-introduction)  
+    1.1 [Culture Match Calculation](11-culture-match-calculation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Domain Representation](111-domain-representation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Statement Representation](112-statement-representation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.3 [Bin Representation](113-bin-representation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.4 [Final Score Representation](114-final-score-representation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.5 [Pseudo-code Representation](115-pseudo-code-representation)      
+    1.2 [Skills Match Calculation](12-skills-match-calculation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 [Skill Representation](121-skill-representation)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Pseudo-code Representation](122-pseudo-code-representation)  
     1.3 [Percent Match Calculation](13-percent-match-calculation)
         
 
