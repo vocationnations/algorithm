@@ -59,7 +59,7 @@ func isValidDomain(domain string) bool {
 	return false
 }
 
-// isValidSkills returns ture if the skills tuple is valid, false otherwise
+// isValidSkills returns true if the skills tuple is valid, false otherwise
 func isValidSkills(skills string, skillCount int) bool {
 	var re = regexp.MustCompile(fmt.Sprintf(`^(\([0-9]{1},[0-9]{1,}\);){%d}\([0-9]{1,},[0-9]{1,}\)`, skillCount-1))
 	if re.MatchString(skills) {
