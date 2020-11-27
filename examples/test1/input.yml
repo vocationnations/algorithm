@@ -1,0 +1,74 @@
+# candidate
+worth:
+  skills: 40
+  culture: 60
+candidate:
+  skills:
+    - name: "Python"
+      value: 50
+    - name: "Java"
+      value: 40
+    - name: "SQL"
+      value: 60
+    - name: "Laravel"
+      value: 70
+  culture:
+    - hierarchy: 88
+      market: 2
+      adhocracy: 5
+      clan: 5
+    - hierarchy: 88
+      market: 2
+      adhocracy: 5
+      clan: 5
+    - hierarchy: 88
+      market: 2
+      adhocracy: 5
+      clan: 5
+    - hierarchy: 88
+      market: 2
+      adhocracy: 5
+      clan: 5
+    - hierarchy: 88
+      market: 2
+      adhocracy: 5
+      clan: 5
+    - hierarchy: 88
+      market: 2
+      adhocracy: 5
+      clan: 5
+employer:
+  skills:
+    - name: "Python"
+      value: 80
+    - name: "Java"
+      value: 40
+    - name: "SQL"
+      value: 60
+    - name: "Laravel"
+      value: 90
+  culture:
+    - hierarchy: 60
+      market: 20
+      adhocracy: 10
+      clan: 10
+    - hierarchy: 60
+      market: 20
+      adhocracy: 10
+      clan: 10
+    - hierarchy: 60
+      market: 20
+      adhocracy: 10
+      clan: 10
+    - hierarchy: 60
+      market: 20
+      adhocracy: 10
+      clan: 10
+    - hierarchy: 60
+      market: 20
+      adhocracy: 10
+      clan: 10
+    - hierarchy: 60
+      market: 20
+      adhocracy: 10
+      clan: 10
