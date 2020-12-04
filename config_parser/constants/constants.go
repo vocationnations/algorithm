@@ -1,5 +1,5 @@
 package constants
 
 const (
-	TOTAL_CATEGORIES = 6
+	TotalCategories = 6
 )

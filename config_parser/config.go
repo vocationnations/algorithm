@@ -73,10 +73,10 @@ func validateConfig(c *Config) error {
 
 	// the total number of categories for employer and candidate culture is equal
 	//  to TOTAL_CATEGORIES
-	if len(c.Candidate.Culture) != constants.TOTAL_CATEGORIES &&
-		len(c.Employer.Culture) != constants.TOTAL_CATEGORIES {
+	if len(c.Candidate.Culture) != constants.TotalCategories &&
+		len(c.Employer.Culture) != constants.TotalCategories {
 		return fmt.Errorf("ERROR: The total number of categories in culture for candidate and employer "+
-			"should be equal to %d", constants.TOTAL_CATEGORIES)
+			"should be equal to %d", constants.TotalCategories)
 	}
 
 	// TODO: check to ensure that all the skill values are within 0-100
