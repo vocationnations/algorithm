@@ -2,6 +2,7 @@ package config_parser
 
 import (
 	"fmt"
+	"github.com/vocationnations/algorithm/config_parser/constants"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 )
@@ -19,8 +20,8 @@ type (
 	}
 
 	Skill struct {
-		Name  string `yaml:"name"`
-		Value float64    `yaml:"value"`
+		Name  string  `yaml:"name"`
+		Value float64 `yaml:"value"`
 	}
 
 	Domain struct {
@@ -51,8 +52,8 @@ func ParseConfig(yamlFilePath string) (*Config, error) {
 	}
 
 	// try to unmarshall the YAML file.
-	if err = yaml.Unmarshal(yamlFile,&config); err != nil {
-		return nil, fmt.Errorf("ERROR: Cannot unmarshall the YAML file, err %v",err)
+	if err = yaml.Unmarshal(yamlFile, &config); err != nil {
+		return nil, fmt.Errorf("ERROR: Cannot unmarshall the YAML file, err %v", err)
 	}
 
 	// validate the YAML file
@@ -64,6 +65,23 @@ func ParseConfig(yamlFilePath string) (*Config, error) {
 }
 
 func validateConfig(c *Config) error {
-	// TODO: work on validating the YAML file
+
+	// worth should add up to 100%
+	if c.Worth.Skills+c.Worth.Culture != 100 {
+		return fmt.Errorf("ERROR: The worth should add up to 100%")
+	}
+
+	// the total number of categories for employer and candidate culture is equal
+	//  to TOTAL_CATEGORIES
+	if len(c.Candidate.Culture) != constants.TOTAL_CATEGORIES &&
+		len(c.Employer.Culture) != constants.TOTAL_CATEGORIES {
+		return fmt.Errorf("ERROR: The total number of categories in culture for candidate and employer "+
+			"should be equal to %d", constants.TOTAL_CATEGORIES)
+	}
+
+	// TODO: check to ensure that all the skill values are within 0-100
+
+	// TODO: Check to ensure that domain values in very category sum up to 100% for both employer and candidates.
+
 	return nil
 }
