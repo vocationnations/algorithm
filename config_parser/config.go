@@ -15,6 +15,11 @@ type (
 	}
 
 	MatchingWorth struct {
+		Candidate EntityWorth `yaml:"candidate"`
+		Employer  EntityWorth `yaml:"employer"`
+	}
+
+	EntityWorth struct {
 		Skills  float64 `yaml:"skills"`
 		Culture float64 `yaml:"culture"`
 	}
@@ -67,8 +72,10 @@ func ParseConfig(yamlFilePath string) (*Config, error) {
 func validateConfig(c *Config) error {
 
 	// worth should add up to 100%
-	if c.Worth.Skills+c.Worth.Culture != 100 {
-		return fmt.Errorf("ERROR: The worth should add up to 100%")
+	if c.Worth.Employer.Skills+c.Worth.Employer.Culture != 100 ||
+		c.Worth.Candidate.Skills+c.Worth.Candidate.Culture != 100 {
+
+		return fmt.Errorf("ERROR: The total worth should add up to 100%")
 	}
 
 	// the total number of categories for employer and candidate culture is equal
@@ -78,8 +85,6 @@ func validateConfig(c *Config) error {
 		return fmt.Errorf("ERROR: The total number of categories in culture for candidate and employer "+
 			"should be equal to %d", constants.TotalCategories)
 	}
-
-	// TODO: check to ensure that all the skill values are within 0-100
 
 	// TODO: Check to ensure that domain values in very category sum up to 100% for both employer and candidates.
 

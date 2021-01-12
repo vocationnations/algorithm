@@ -1,0 +1,69 @@
+worth:
+  candidate:
+    skills: 100
+    culture: 0
+  employer:
+    skills: 0
+    culture: 100
+candidate:
+  skills:
+    - name: "Python"
+      value: 100
+    - name: "Java"
+      value: 100
+  culture:
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+employer:
+  skills:
+    - name: "Python"
+      value: 100
+    - name: "Java"
+      value: 100
+  culture:
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100
+    - hierarchy: 0
+      market: 0
+      adhocracy: 0
+      clan: 100

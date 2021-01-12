@@ -26,7 +26,7 @@ func main() {
 
 	// if either of YAML files are not provided
 	if *yaml == unsetYAML {
-		panic("ERROR: Both the candidate YAML and employer YAML files are required.")
+		panic("ERROR: YAML file is required.")
 	}
 
 	// parse the config
@@ -38,10 +38,10 @@ func main() {
 	// run the algorithm
 	res, err := algorithm.Run(cfg)
 	if err != nil {
-		panic(fmt.Sprintf("ERROR: The algorithm failed to run, erro %v",err))
+		panic(fmt.Sprintf("ERROR: The algorithm failed to run, erro %v", err))
 	}
 
 	// print the results
-	algorithm.Print(res)
+	fmt.Println(algorithm.Print(res))
 
 }

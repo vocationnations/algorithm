@@ -1,16 +1,20 @@
 worth:
-  skills: 40
-  culture: 60
+  candidate:
+    skills: 100
+    culture: 0
+  employer:
+    skills: 0
+    culture: 100
 candidate:
   skills:
     - name: "Python"
-      value: 50
+      value: 100
     - name: "Java"
-      value: 40
+      value: 100
     - name: "SQL"
-      value: 60
+      value: 100
     - name: "Laravel"
-      value: 70
+      value: 100
   culture:
     - hierarchy: 88
       market: 2
@@ -39,13 +43,13 @@ candidate:
 employer:
   skills:
     - name: "Python"
-      value: 80
+      value: 100
     - name: "Java"
-      value: 40
+      value: 100
     - name: "SQL"
-      value: 60
+      value: 100
     - name: "Laravel"
-      value: 90
+      value: 100
   culture:
     - hierarchy: 60
       market: 20
